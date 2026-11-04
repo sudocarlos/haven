@@ -44,6 +44,6 @@ func seedTestEnv() {
 		"BLASTR_RELAYS_FILE":        "relays_blastr.example.json",
 	}
 	for k, v := range env {
-		os.Setenv(k, v)
+		_ = os.Setenv(k, v)
 	}
 }
